@@ -111,14 +111,14 @@ export function Contact() {
                 <Mail className="h-6 w-6 text-primary mt-1" />
                 <div className="ml-4">
                   <h3 className="font-semibold">Email</h3>
-                  <p className="text-gray-600">hello@discoverdiani.com</p>
+                  <p className="text-gray-600">hello@discoverdiani.co.ke</p>
                 </div>
               </div>
               <div className="flex items-start">
                 <Phone className="h-6 w-6 text-primary mt-1" />
                 <div className="ml-4">
                   <h3 className="font-semibold">Phone</h3>
-                  <p className="text-gray-600">+254 700 000 000</p>
+                  <p className="text-gray-600">+254 722 129 034</p>
                 </div>
               </div>
               <div className="flex items-start">
