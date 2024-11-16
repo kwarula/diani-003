@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Open Sans', system-ui, sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .transition-colors {
+    transition-property: background-color, border-color, color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+}
+
+.react-select__control {
+  @apply border border-gray-300 rounded-lg shadow-sm min-h-[42px] !important;
+}
+
+.react-select__control--is-focused {
+  @apply border-primary ring-2 ring-primary/20 !important;
+}
+
+.react-select__menu {
+  @apply border border-gray-300 rounded-lg shadow-lg mt-1 !important;
+}
+
+.react-select__option {
+  @apply cursor-pointer px-3 py-2 !important;
+}
+
+.react-select__option--is-focused {
+  @apply bg-primary/10 !important;
+}
+
+.react-select__option--is-selected {
+  @apply bg-primary text-white !important;
+}
+
+.react-select__multi-value {
+  @apply bg-primary/10 rounded-md !important;
+}
+
+.react-select__multi-value__label {
+  @apply text-primary !important;
+}
+
+.react-select__multi-value__remove {
+  @apply text-primary hover:bg-primary hover:text-white rounded-md !important;
+}
